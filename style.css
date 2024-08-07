@@ -1,0 +1,103 @@
+body {
+    background-color: #111111;
+}
+*{
+    transition: all 100ms linear;
+}
+div.wrapper {
+    width: 300px;
+    height: 300px;
+    border: 8px solid rgb(237, 227, 227);
+    border-radius: 50%;
+    margin: 100px auto;
+    position: relative;
+}
+
+div.wrapper>div.item {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50px / 2);
+    color: white;
+    font-size: 30px;
+}
+div.wrapper>div:nth-of-type(1){
+    transform: translate(5px,0px);
+}
+div.wrapper>div:nth-of-type(2){
+    transform: translate(70px,15px);
+}
+div.wrapper>div:nth-of-type(3){
+    transform: translate(125px,70px);
+}
+div.wrapper>div:nth-of-type(4){
+    transform: translate(140px,140px);
+}
+div.wrapper>div:nth-of-type(5){
+    transform: translate(115px,205px);
+}
+div.wrapper>div:nth-of-type(6){
+    transform: translate(67px,255px);
+}
+div.wrapper>div:nth-of-type(7){
+    transform: translate(5px,270px);
+}
+div.wrapper>div:nth-of-type(8){
+    transform: translate(-55px,250px);
+}
+div.wrapper>div:nth-of-type(9){
+    transform: translate(-105px,200px);
+}
+div.wrapper>div:nth-of-type(10){
+    transform: translate(-125px,140px);
+}
+div.wrapper>div:nth-of-type(11){
+    transform: translate(-105px,70px);
+}div.wrapper>div:nth-of-type(12){
+    transform: translate(-60px,18px);
+}
+.move{
+    position: relative;
+
+}
+.move>div:nth-of-type(1){
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+   top: 148px;
+   left: 142px;
+   z-index: 5;
+}
+
+.move>div:nth-of-type(2){
+    width:4px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    top:83px;
+    left: 146px;
+    transform-origin: 3px 75px;
+    transform: rotate(50deg);
+}
+.move>div:nth-of-type(3){
+    width:2px;
+    height: 110px;
+    background-color: white;
+    position: absolute;
+    top: 54px;
+    left: 152px;
+    transform: rotate(10deg);
+    transform-origin: 3px 75px;
+
+    
+}
+.move>div:nth-of-type(4){
+    width:4px;
+    height: 85px;
+    background-color: rgb(5, 26, 255);
+    position: absolute;
+    top: 65px;
+    left: 150px;
+    transform-origin: 3px 75px;
+}
