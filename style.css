@@ -78,7 +78,6 @@ div.wrapper>div:nth-of-type(11){
     top:83px;
     left: 146px;
     transform-origin: 3px 75px;
-    transform: rotate(50deg);
 }
 .move>div:nth-of-type(3){
     width:2px;
@@ -87,17 +86,17 @@ div.wrapper>div:nth-of-type(11){
     position: absolute;
     top: 54px;
     left: 152px;
-    transform: rotate(10deg);
-    transform-origin: 3px 75px;
-
-    
+    transform-origin: -2px 104px; 
 }
 .move>div:nth-of-type(4){
     width:4px;
     height: 85px;
-    background-color: rgb(5, 26, 255);
+    background-color: rgb(255, 202, 57);
     position: absolute;
-    top: 65px;
-    left: 150px;
-    transform-origin: 3px 75px;
+    top: 70px;
+    left: 147px;
+    transform-origin: 1px 87px; 
+    /* top: 155px;
+    left: 149px;
+    transform-origin: 0px 0px; */
 }
