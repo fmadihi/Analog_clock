@@ -15,44 +15,23 @@ $(document).ready(function () {
      $(arrow_s).css({
          'transform': `rotate(`+ s + `deg)`
      });
-    // function se() {
-    //     if (s%360===0){
-    //             m++;
-    //             $(arrow_m).css({
-    //                 'transform': `rotate(`+ m + `deg)`
-    //             });
-    //             if(m%360===0){
-    //                 h++;
-    //                 $(arrow_h).css({
-    //                     'transform': `rotate(`+ h + `deg)`
-    //                 });
-    //             }
-    //     }
-    //     s=s+2;
-    //     $(arrow_s).css({
-    //         'transform': `rotate(`+ s + `deg)`
-    //     });
-    // }
     function se() {
-        if (s>=360){
+        if (s%360===0){
                 m++;
                 $(arrow_m).css({
                     'transform': `rotate(`+ m + `deg)`
                 });
-                if(m>360){
+                if(m%360===0){
                     h++;
                     $(arrow_h).css({
                         'transform': `rotate(`+ h + `deg)`
                     });
-                    m= m - 360
                 }
-                s=s-360
         }
         s=s+2;
         $(arrow_s).css({
             'transform': `rotate(`+ s + `deg)`
         });
-
     }
     setInterval(se,900);
 });
